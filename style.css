@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 300px;
+    margin: auto;
+    height: 80vh ;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+
+h1 {
+    font-family: "Comic Neue",sans-serif;
+    font-size: 70px;
+}
+
+p{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+table {
+    margin-top: 10px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+tr ,th, td {
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+}
