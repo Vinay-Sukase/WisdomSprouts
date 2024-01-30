@@ -11,17 +11,17 @@ html, body {
 }
 
 .pimg1 {
-    background-image: url(https://github.com/Vinay-Sukase/WisdomSprouts/tree/main/parallax_website/images/image1.png);
+    background-image: url("/parallax_website/images/image1.png");
     min-height: 100%;
 }
 
 .pimg2 {
-    background-image: url(parallax_website/images/image2.png);
+    background-image: url("/parallax_website/images/image2.png");
     min-height: 400px;
 }
 
 .pimg3 {
-    background-image: url(parallax_website/images/image3.png);
+    background-image: url("/parallax_website/images/image3.png");
     min-height: 400px;
 }
 
