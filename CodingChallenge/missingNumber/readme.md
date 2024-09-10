@@ -17,13 +17,13 @@ Your task is to find the missing integer.
 - The array contains exactly `n-1` distinct integers, and all integers are in the range `[1, n]`.
 - Time complexity must be `O(n)`.
 - Space complexity should be `O(1)` (constant space).
-- \( 1 \leq n \leq 10^6 \)
+- \( 1 \ leq n \ leq 10^6 \)
 
 ## Approach:
 
 ### Solution 1: Without In-built Functions
 - The sum of numbers from `1` to `n` can be calculated using the formula:  
-  \[ \text{Sum}_n = \frac{n \times (n + 1)}{2} \]
+  \[ \ text{Sum}_n = \ frac{n \ times (n + 1)}{2} \]
 - We calculate the sum of the array elements and subtract it from the total sum to find the missing number.
 
 ### Solution 2: Using In-built Functions
