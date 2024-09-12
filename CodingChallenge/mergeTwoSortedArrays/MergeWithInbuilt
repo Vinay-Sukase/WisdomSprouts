@@ -1,0 +1,56 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MergeWithInbuilt {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input the sizes of the two arrays
+        System.out.println("Enter the size of arr1:");
+        int m = sc.nextInt();
+        System.out.println("Enter the size of arr2:");
+        int n = sc.nextInt();
+
+        // Input the elements of arr1
+        int[] arr1 = new int[m];
+        System.out.println("Enter " + m + " sorted elements for arr1:");
+        for (int i = 0; i < m; i++) {
+            arr1[i] = sc.nextInt();
+        }
+
+        // Input the elements of arr2
+        int[] arr2 = new int[n];
+        System.out.println("Enter " + n + " sorted elements for arr2:");
+        for (int i = 0; i < n; i++) {
+            arr2[i] = sc.nextInt();
+        }
+
+        // Merge arr2 into arr1 and sort them together
+        mergeUsingInbuiltFunctions(arr1, arr2, m, n);
+
+        // Print merged arrays
+        System.out.println("Merged arr1:");
+        for (int i = 0; i < m; i++) {
+            System.out.print(arr1[i] + " ");
+        }
+        System.out.println();
+        System.out.println("Merged arr2:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr2[i] + " ");
+        }
+    }
+
+    public static void mergeUsingInbuiltFunctions(int[] arr1, int[] arr2, int m, int n) {
+        // Create a temporary array to hold all elements
+        int[] mergedArray = new int[m + n];
+        System.arraycopy(arr1, 0, mergedArray, 0, m);
+        System.arraycopy(arr2, 0, mergedArray, m, n);
+
+        // Sort the combined array
+        Arrays.sort(mergedArray);
+
+        // Copy back the sorted elements into arr1 and arr2
+        System.arraycopy(mergedArray, 0, arr1, 0, m);
+        System.arraycopy(mergedArray, m, arr2, 0, n);
+    }
+}
